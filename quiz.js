@@ -1,0 +1,12 @@
+function player() {
+    player1_name = document.getElementById("player1_name_input").value;
+    player2_name = document.getElementById("player2_name_input").value;
+
+    localStorage.setItem("player1_name", player1_name);
+    localStorage.setItem("player2_name", player2_name);
+
+    window.location = "quiz-page.html";
+
+    document.getElementById("player1_name").innerHTML = localStorage.getItem("player1_name_input");
+    document.getElementById("player2_name").innerHTML = localStorage.getItem("player2_name_input");
+}
